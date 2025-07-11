@@ -1,0 +1,165 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2312                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      setFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+
+x1c 0;
+
+x2c 80;
+
+
+z1c 0;
+
+z2c 1.58;
+
+z3c 3.17;
+
+z4c 4.75;
+
+z5c 6.34;
+
+z6c 7.92;
+
+z7c 9.51;
+
+z8c 11.09;
+
+z9c 12.67;
+
+z10c 14.26;
+
+z11c 15.84;
+
+
+LAD1	0	;
+
+LAD2	2.10486809051872	;
+
+LAD3	2.29674958374432	;
+
+LAD4	1.7666047734966	;
+
+LAD5	1.0993583254262	;
+
+LAD6	0.561273759504528	;
+
+LAD7	0.226143109429779	;
+
+LAD8	0.0648679147000199	;
+
+LAD9	0.0103057518308095	;
+
+LAD10	0.000399649337626673	;
+
+LAD11	0	;
+
+
+regions
+(
+    boxToCell
+    {
+      box ($x1c -1 $z1c) ($x2c 1 $z2c);
+        fieldValues
+        (
+	 volScalarFieldValue LAD $LAD1
+        );
+    }
+
+    boxToCell
+    {
+      box ($x1c -1 $z2c) ($x2c 1 $z3c);
+        fieldValues
+        (
+	 volScalarFieldValue LAD $LAD2
+        );
+    }
+
+    boxToCell
+    {
+      box ($x1c -1 $z3c) ($x2c 1 $z4c);
+        fieldValues
+        (
+	 volScalarFieldValue LAD $LAD3
+        );
+    }
+
+    boxToCell
+    {
+      box ($x1c -1 $z4c) ($x2c 1 $z5c);
+        fieldValues
+        (
+	 volScalarFieldValue LAD $LAD4
+        );
+    }
+
+    boxToCell
+    {
+      box ($x1c -1 $z5c) ($x2c 1 $z6c);
+        fieldValues
+        (
+	 volScalarFieldValue LAD $LAD5
+        );
+    }
+
+    boxToCell
+    {
+      box ($x1c -1 $z6c) ($x2c 1 $z7c);
+        fieldValues
+        (
+	 volScalarFieldValue LAD $LAD6
+        );
+    }
+
+    boxToCell
+    {
+      box ($x1c -1 $z7c) ($x2c 1 $z8c);
+        fieldValues
+        (
+	 volScalarFieldValue LAD $LAD7
+        );
+    }
+
+    boxToCell
+    {
+      box ($x1c -1 $z8c) ($x2c 1 $z9c);
+        fieldValues
+        (
+	 volScalarFieldValue LAD $LAD8
+        );
+    }
+
+    boxToCell
+    {
+      box ($x1c -1 $z9c) ($x2c 1 $z10c);
+        fieldValues
+        (
+	 volScalarFieldValue LAD $LAD9
+        );
+    }
+
+    boxToCell
+    {
+      box ($x1c -1 $z10c) ($x2c 1 $z11c);
+        fieldValues
+        (
+	 volScalarFieldValue LAD $LAD10
+        );
+    }
+
+);
+
+
+// ************************************************************************* //
